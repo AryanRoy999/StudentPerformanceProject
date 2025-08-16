@@ -7,7 +7,7 @@ import dill
 import pickle
 from sklearn.metrics import r2_score
 from sklearn.model_selection import GridSearchCV
-
+#this file is used to define all those common basic functions that are used throughout the project
 from src.exception import CustomException
 
 def save_object(file_path, obj):

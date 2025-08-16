@@ -21,8 +21,3 @@ class CustomException(Exception):
         return self.error_message
     
 
-<<<<<<< HEAD
-
-        
-=======
->>>>>>> c19bcd63edae4157610b83d10df60dc1210f3e28

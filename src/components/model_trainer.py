@@ -21,7 +21,7 @@ from src.utils import save_object,evaluate_models
 
 @dataclass
 class ModelTrainerConfig:
-    trained_model_file_path=os.path.join("artifacts","model.pkl")
+    trained_model_file_path=os.path.join("artifacts","model.pkl")#same task as before , it gets to saved to artifacts
 
 class ModelTrainer:
     def __init__(self):
@@ -46,7 +46,7 @@ class ModelTrainer:
                 "CatBoosting Regressor": CatBoostRegressor(verbose=False),
                 "AdaBoost Regressor": AdaBoostRegressor(),
             }
-            params={
+            params={#these params are added to perform hyperparameter tuning to get the best model with best set of parameters for our data. Ypu can uncomment some params and apply it if you want to
                 "Decision Tree": {
                     'criterion':['squared_error', 'friedman_mse', 'absolute_error', 'poisson'],
                     # 'splitter':['best','random'],
@@ -97,7 +97,7 @@ class ModelTrainer:
             ]
             best_model = models[best_model_name]
 
-            if best_model_score<0.6:
+            if best_model_score<0.6:#setting a threshold for score
                 raise CustomException("No best model found")
             logging.info(f"Best found model on both training and testing dataset")
 
