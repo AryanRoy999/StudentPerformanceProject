@@ -55,10 +55,8 @@ Logging and custom exception handling are used across the codebase.
 
 
 Raw Dataset
-
-&nbsp;  |
-
-&nbsp;  v
+     |
+     v
 
 \[Data Ingestion]
 
@@ -69,7 +67,6 @@ Raw Dataset
 &nbsp;  - Saves artifacts/train.csv and artifacts/test.csv
 
 &nbsp;  |
-
 &nbsp;  v
 
 \[Data Transformation]
@@ -83,7 +80,6 @@ Raw Dataset
 &nbsp;  - Saves artifacts/preprocessor.pkl
 
 &nbsp;  |
-
 &nbsp;  v
 
 \[Model Trainer]
@@ -95,7 +91,6 @@ Raw Dataset
 &nbsp;  - Selects best model and saves artifacts/model.pkl
 
 &nbsp;  |
-
 &nbsp;  v
 
 \[Prediction Pipeline]
@@ -105,7 +100,6 @@ Raw Dataset
 &nbsp;  - Transforms incoming features and generates predictions
 
 &nbsp;  |
-
 &nbsp;  v
 
 \[Flask App]
